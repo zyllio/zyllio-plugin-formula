@@ -1,7 +1,7 @@
 (function () {
 
   class AreaFunction {
-    
+
     execute() {
       return this.width * this.height.toString() + 'm²';
     }
@@ -21,33 +21,29 @@
     label: 'Area',
     category: 'Number',
     format: 'number',
-    properties: [
-      {
-        id: 'width',
-        name: 'Width',
-        type: 'number',
-        default: '0',
-        main: true
-      },
-      {
-        id: 'height',
-        name: 'Height',
-        type: 'number',
-        default: '0',
-        main: false
-      }
-    ],
-    translations: [
-      {
-        lang: 'fr',
-        label: 'Surface',
-        category: 'Nombre',
-        properties: [
-          { id: 'width', name: 'Largeur' },
-          { id: 'height', name: 'Hauteur' }
-        ]
-      }
-    ]
+    properties: [{
+      id: 'width',
+      name: 'Width',
+      type: 'number',
+      default: '0',
+      main: true
+    },
+    {
+      id: 'height',
+      name: 'Height',
+      type: 'number',
+      default: '0',
+      main: false
+    }],
+    translations: [{
+      lang: 'fr',
+      label: 'Surface',
+      category: 'Nombre',
+      properties: [
+        { id: 'width', name: 'Largeur' },
+        { id: 'height', name: 'Hauteur' }
+      ]
+    }]
   };
 
   zySdk.services.registry.registerFunction(AreaMetadata, AreaFunction);
