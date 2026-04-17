@@ -1,5 +1,7 @@
 (function () {
 
+  console.log('Area plugin loaded');
+
   class AreaFunction {
 
     execute() {
