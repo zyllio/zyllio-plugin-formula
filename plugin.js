@@ -5,7 +5,7 @@
   class AreaFunction {
 
     execute() {
-      return this.width * this.height.toString() + 'm²';
+      return this.width * this.height.toString();
     }
   }
 
@@ -21,7 +21,7 @@
     metadataVersion: 2,
     icon: IconData,
     label: 'Area',
-    category: 'Number',
+    category: 'Plugin',
     format: 'number',
     properties: [{
       id: 'width',
