@@ -9,8 +9,6 @@
     }
   }
 
-  const zyAreaFunction = new AreaFunction();
-
   const IconData =
     '<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">' +
     '<path d="M4 6H20V18H4V6M6 8V16H18V8H6Z" />' +
